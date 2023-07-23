@@ -284,7 +284,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.AABox, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"center":{"x":0.10865139961242676,"y":0.8092804551124573,"z":-0.9288338422775269},"size":{"x":2.502734661102295,"y":1.2994743585586548,"z":2.65793514251709}}'
+      m_SerializableObject: '{"center":{"x":0.10865142941474915,"y":-0.4852006733417511,"z":-1.2084296941757203},"size":{"x":2.502734661102295,"y":1.2994743585586548,"z":2.65793514251709}}'
     m_Space: 0
   m_Property:
     name: bounds
@@ -723,9 +723,9 @@ MonoBehaviour:
   - {fileID: 8926484042661614651}
   - {fileID: 8926484042661614674}
   dataType: 1
-  capacity: 100000
+  capacity: 20000
   stripCapacity: 10
-  particlePerStripCount: 10000
+  particlePerStripCount: 2000
   needsComputeBounds: 0
   boundsMode: 0
   m_Space: 0
@@ -764,7 +764,7 @@ MonoBehaviour:
   index: 0
   writePosition: 1
   writeTargetPosition: 0
-  mode: 0
+  mode: 2
 --- !u!114 &8926484042661614629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -859,7 +859,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"position":{"x":0.029999999329447748,"y":0.0,"z":0.0}}'
+      m_SerializableObject: '{"position":{"x":0.029999973252415658,"y":-0.08973050862550736,"z":-1.2527552843093873}}'
     m_Space: 0
   m_Property:
     name: Center
@@ -1029,7 +1029,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.DirectionType, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"direction":{"x":0.0,"y":1.0,"z":0.0}}'
+      m_SerializableObject: '{"direction":{"x":3.0,"y":1.0,"z":0.0}}'
     m_Space: 0
   m_Property:
     name: Normal

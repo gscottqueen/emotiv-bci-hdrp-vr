@@ -38,7 +38,7 @@ This technology offers a personalized experience that allows users to engage wit
 
 </br>
 
-- These data points are then passed through to generative visual effects, like this particle ray system
+- These data points are then passed through to generative visual effects, like this particle ray system.
  
 </br>
  

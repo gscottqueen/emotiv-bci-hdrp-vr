@@ -13,7 +13,7 @@ namespace dirox.emotiv.controller
     {
         [SerializeField] private Transform    deviceList;
         [SerializeField] private GameObject   txtNote;
-        [SerializeField] private GameObject   txtNote;
+        [SerializeField] private GameObject   btnExit;
         [SerializeField] private CanvasScaler rootCanvasScaler;
         [SerializeField]
         private Image fadeImage;

@@ -18343,6 +18343,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114759923530007490, guid: 5ab790ec77d6549709f962ce62b80060,
         type: 3}
+      propertyPath: btnExit
+      value: 
+      objectReference: {fileID: 1751730061}
+    - target: {fileID: 114759923530007490, guid: 5ab790ec77d6549709f962ce62b80060,
+        type: 3}
+      propertyPath: txtExit
+      value: 
+      objectReference: {fileID: 1751730061}
+    - target: {fileID: 114759923530007490, guid: 5ab790ec77d6549709f962ce62b80060,
+        type: 3}
       propertyPath: fadeImage
       value: 
       objectReference: {fileID: 1857978927}

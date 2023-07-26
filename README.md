@@ -46,7 +46,7 @@ This technology offers a personalized experience that allows users to engage wit
 
 </br>
 
-- In some cases we work to push the graphical limits. In this scene we are baking 500000+ animated hair material frames. Eventualy we will push this works to the DOTS programing design pattern to push these limits even further.
+- In some cases we work to push the graphical limits. In this scene we are baking 500000+ animated hair material frames. Eventualy we will push this works to the [DOTS programing design pattern](https://unity.com/dots) to see these limits go even further.
 
 </br>
 

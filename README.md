@@ -46,7 +46,7 @@ This technology offers a personalized experience that allows users to engage wit
 
 </br>
 
-- In some cases we work to push the graphical limits. In this scene we are baking 500000+ animated hair material frames. Eventualy we will push this works to the [DOTS programing design pattern](https://unity.com/dots) to see these limits go even further.
+- In some cases we work to push the graphical limits. In this scene we are baking 500000+ animated hair material frames. Eventualy we will push this work to the [DOTS programing design pattern](https://unity.com/dots) to see these limits go even further.
 
 </br>
 
@@ -75,7 +75,7 @@ There are different builds and branches that are in active development, each has
 - [Meta Quest Developer Mode Access](https://www.bing.com/videos/search?q=how+to+set+up+developer+mode+oculus+2&qpvt=how+to+set+up+developer+mode+oculus+2&view=detail&mid=A4BE460E591842321D8BA4BE460E591842321D8B&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dhow%2Bto%2Bset%2Bup%2Bdeveloper%2Bmode%2Boculus%2B2%26qpvt%3Dhow%2Bto%2Bset%2Bup%2Bdeveloper%2Bmode%2Boculus%2B2%26FORM%3DVDRE)
 - [Meta Link](https://www.meta.com/quest/setup/)
 
-### 1.Open Explore
+### 1. Open Explore
 [This build package is for demonstration of interactions without the brainware dependency.](https://drive.google.com/file/d/1Qlgar3oFswinqbXLeUL5ud7afwuF94OQ/view?usp=sharing)
 
 ### 2. experimental-bci-integration-virtual

@@ -8,6 +8,51 @@ Combining the Emotiv Insight 2, five (5) channel EEG brainware, Meta Quest 2 vir
 
 This technology offers a personalized experience that allows users to engage with their cognitive states. By using internalized emotional focus they can shape visuals and interact with the program on a subconscious level. This bridge connects neuroscience, virtual reality, and interactive programming to open up applications in the research of mental wellness and technology through expressive sensibilities, aesthetics, and creative expression.
 
+## Screen Captures
+
+<img src="https://github.com/gscottqueen/emotiv-bci-hdrp-vr/assets/4613286/8f290ec8-5e5a-4f5d-aa3a-dba1551fc07e" width=50% height=50%>
+
+</br>
+
+- The High Definition Render Pipeline (HDRP) is a high-fidelity Scriptable Render Pipeline built by Unity to target modern (Compute Shader compatible) platforms. HDRP utilizes physically based Lighting techniques, linear lighting, HDR lighting, and a configurable hybrid Tile/Cluster deferred/Forward lighting architecture. ([source](https://www.bing.com/search?pglt=41&q=high+definition+rendering+pipeline&cvid=90e88c5abd584a6e9d01aba3541f2dc8&aqs=edge.0.0j69i57j0l7.5238j0j1&FORM=ANAB01&PC=U531))
+
+</br>
+
+<img src="https://github.com/gscottqueen/emotiv-bci-hdrp-vr/assets/4613286/5edaa554-ad9e-4265-84b5-49a05372d43c" width=50% height=50%>
+
+</br>
+
+- The graphic menu is integrated to search for avalible devices via bluetooth and allow a user to select which device they would like to integrate with the session.
+
+</br>
+
+<img src="https://github.com/gscottqueen/emotiv-bci-hdrp-vr/assets/4613286/e17efe84-71ec-4475-acd3-8e47be5b69c7" width=50% height=50%>
+
+</br>
+
+- When the channels for emotional response are of a connectivity value greater than 80%, interactive elements intantiate into the scene. Here each of these boxes represents a different emotional data point.
+
+</br>
+
+<img src="https://github.com/gscottqueen/emotiv-bci-hdrp-vr/assets/4613286/7d352ad1-f6cf-4711-9408-7f947754fc08" width=50% height=50%>
+
+</br>
+
+- These data points are then passed through to generative visual effects, like this particle ray system
+ 
+</br>
+ 
+<img src="https://github.com/gscottqueen/emotiv-bci-hdrp-vr/assets/4613286/e86adae5-7a0c-4d04-b89a-a5bea594c0d6" width=50% height=50%>
+
+</br>
+
+- In some cases we work to push the graphical limits. In this scene we are baking 500000+ animated hair material frames. Eventualy we will push this works to the DOTS programing design pattern to push these limits even further.
+
+</br>
+
+
+
+
 ## Active Development
 
 There are different builds and branches that are in active development, each has its own system and hardware requirements.

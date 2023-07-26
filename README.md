@@ -97,6 +97,6 @@ We use this branch to work with physical brainware.
 
 Same as above, but with a physical device connected via bluetooth.  This has some additinoal quaternion data points that are only avalible through the physical device.
 
-Dependencies:
+#### Dependencies:
 
 This project was initated by leveraging the [Emotiv-Unity-Plugin](https://github.com/Emotiv/unity-plugin) and is included with this project as a submodule.

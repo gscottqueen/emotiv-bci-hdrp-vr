@@ -30,10 +30,12 @@ There are different builds and branches that are in active development, each has
 - [Meta Quest Developer Mode Access](https://www.bing.com/videos/search?q=how+to+set+up+developer+mode+oculus+2&qpvt=how+to+set+up+developer+mode+oculus+2&view=detail&mid=A4BE460E591842321D8BA4BE460E591842321D8B&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dhow%2Bto%2Bset%2Bup%2Bdeveloper%2Bmode%2Boculus%2B2%26qpvt%3Dhow%2Bto%2Bset%2Bup%2Bdeveloper%2Bmode%2Boculus%2B2%26FORM%3DVDRE)
 - [Meta Link](https://www.meta.com/quest/setup/)
 
-### 1. open-explore
-This build package is for demonstration of interactions without the brainware dependency.
+### 1.Open Explore
+[This build package is for demonstration of interactions without the brainware dependency.](https://drive.google.com/file/d/1Qlgar3oFswinqbXLeUL5ud7afwuF94OQ/view?usp=sharing)
 
 ### 2. experimental-bci-integration-virtual
+
+We use this branch to work virtualized hardware from the Emotiv Launcher.
 
 **Additional Dependencies**
 - [Emotiv Launcher](https://www.emotiv.com/emotiv-launcher/)
@@ -42,6 +44,8 @@ This build package is for demonstration of interactions without the brainware de
 With this branch you can establish a virtual brainware device and use it to imulate generative conection points in the interactive experiences.
 
 ### 3. experimental-bci-integration
+
+We use this branch to work with physical brainware.
 
 **Additional Dependencies**
 - [Emotiv Insight 2 (5 channel) EEG](https://www.emotiv.com/insight/)

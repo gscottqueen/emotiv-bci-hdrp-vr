@@ -1,7 +1,9 @@
 ﻿# Integrating Human Data into Virtual Environments
 
 > An experimental generative art work that integrates electroencephalography (EEG) activity with a virtual environment.
- 
+
+[Supplemental Research & Writing](https://docs.google.com/document/d/1fecL9E1dA5AUxQGLOU4fsZUmMXT6Wm6GzOxjJ7qpnlI/edit?usp=drivesdk)
+
 https://github.com/gscottqueen/emotiv-bci-hdrp-vr/assets/4613286/b60994c7-1414-48f2-8ca7-69ed2f323dfb
 
 Combining the Emotiv Insight 2, five (5) channel EEG brainware, Meta Quest 2 virtual reality headset, and the Unity development platform we integrate streaming neurological data with real-time virtual interactions. Accessing six (6) performance metrics including; engagement, excitement, stress, relaxation, interest, and focus - alongside 9 axis motion sensors, we generate programmatic visuals that allow the user to interact and influence the immersive effects of the program. Users are able to either focus on one metric at a time or chain multiple experiences together, leading to the creation of a multitude of unique generative worlds.

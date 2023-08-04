@@ -54,11 +54,11 @@ namespace dirox.emotiv.controller
       /// <param name="quality">Quality.</param>
       public void SetGOQuality(ContactQualityValue quality)
       {
-      Debug.Log("in GO");
+/*      Debug.Log("in GO");*/
       if (gameObject != null)
       {
-        Debug.Log("setting GO quality");
-        Debug.Log(gameObject);
+/*        Debug.Log("setting GO quality");*/
+/*        Debug.Log(gameObject);*/
         int ordinal = (int)quality;
 
 

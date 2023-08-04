@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.VFX;
+using UnityEngine.VFX.Utility;
 using EmotivUnityPlugin;
 using Zenject;
 
@@ -33,17 +35,15 @@ namespace dirox.emotiv.controller
     [SerializeField] private double accelerationY;
     [SerializeField] private double accelerationZ;
 
-/*    [SerializeField] private GameObject engagement;*/
-/*    [SerializeField] private GameObject excitement;*/
-/*    [SerializeField] private GameObject longTermExcitement;*/
-/*    [SerializeField] private GameObject stress;*/
-    /*    [SerializeField] private GameObject relaxation;*/
+    // Interactables
     [SerializeField] private GameObject interest;
-    /*    [SerializeField] private GameObject focus;*/
+
+    // FX
+    [SerializeField] private VisualEffect lightChapel;
+    private ExposedProperty m_lightChapelProperty = "LightCount";
 
     void Update()
     {
-      /*      Debug.Log(this.isActive);*/
       if (!this.isActive)
       {
         return;
@@ -55,8 +55,6 @@ namespace dirox.emotiv.controller
 
       _timerDataUpdate -= TIME_UPDATE_DATA;
 
-      Debug.Log(DataStreamManager.Instance.GetNumberMotionSamples());
-
       // update motion data
       if (DataStreamManager.Instance.GetNumberMotionSamples() > 0)
       {
@@ -67,7 +65,7 @@ namespace dirox.emotiv.controller
           string chanStr = ChannelStringList.ChannelToString(ele);
           // double is similar to a float
           double[] data = DataStreamManager.Instance.GetMotionData(ele);
-          Debug.Log(data.Length);
+/*          Debug.Log(data.Length);*/
 
           if (usePhysicalDevice == true && data != null && data.Length > 0)
           {
@@ -90,7 +88,6 @@ namespace dirox.emotiv.controller
           motionCube.transform.Rotate(acceleration * Time.deltaTime);
         }
       }
-      Debug.Log("instance" + DataStreamManager.Instance.GetNumberPMSamples());
       // update pm data
       if (DataStreamManager.Instance.GetNumberPMSamples() > 0)
       {
@@ -98,15 +95,19 @@ namespace dirox.emotiv.controller
         {
           string chanStr = ele;
           double data = DataStreamManager.Instance.GetPMData(ele);
-          Debug.Log("" + data);
           if (usePhysicalDevice == true && data > -1 || useVirtualDevice == true && data > -1)
           {
-/*            stress.SetActive(false);*/
             interest.SetActive(true);
+
+            if (chanStr == "int")
+            {
+              Debug.Log("data" + data * 10);
+              lightChapel.SetFloat(m_lightChapelProperty, (float)data * 100);
+              Debug.Log(m_lightChapelProperty);
+            }
           }
           else
           {
-/*            stress.SetActive(false);*/
             interest.SetActive(false);
           }
         }

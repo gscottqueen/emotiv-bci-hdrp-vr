@@ -6090,7 +6090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &583909093
 Transform:
   m_ObjectHideFlags: 0
@@ -9753,9 +9753,9 @@ MonoBehaviour:
   ShowInStartUp: 0
   FADE_IN_TIME: 0.1
   FADE_OUT_TIME: 0.1
-  useVirtualDevice: 1
+  useVirtualDevice: 0
   usePhysicalDevice: 0
-  motionCube: {fileID: 1457699878}
+  motionCube: {fileID: 2115726616}
   qW: 0
   qX: 0
   qY: 0
@@ -9763,8 +9763,8 @@ MonoBehaviour:
   accelerationX: 0
   accelerationY: 0
   accelerationZ: 0
-  stress: {fileID: 583909092}
   interest: {fileID: 2115726616}
+  lightChapel: {fileID: 1391283058}
 --- !u!222 &853839621
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12407,7 +12407,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153514850}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -16708,7 +16708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1637350224
 Transform:
   m_ObjectHideFlags: 0
@@ -20482,7 +20482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2030300451
 Transform:
   m_ObjectHideFlags: 0
@@ -20745,7 +20745,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2115726617
 Transform:
   m_ObjectHideFlags: 0

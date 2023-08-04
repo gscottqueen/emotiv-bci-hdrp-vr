@@ -15,30 +15,31 @@ namespace dirox.emotiv.controller
   public class DataSubscriber : BaseCanvasView
   {
     DataStreamManager _dataStreamMgr = DataStreamManager.Instance;
-
     float _timerDataUpdate = 0;
     const float TIME_UPDATE_DATA = .01f;
+    [SerializeField] private bool useVirtualDevice;
+    [SerializeField] private bool usePhysicalDevice;
 
-/*    [SerializeField] private GameObject motionCube;  // a simple cube we can manipulate with data*/
+    [SerializeField] private GameObject motionCube;  // a simple cube we can manipulate with data
 
     // Quaternion values
-/*    [SerializeField] private double qW;
+    [SerializeField] private double qW;
     [SerializeField] private double qX;
     [SerializeField] private double qY;
-    [SerializeField] private double qZ;*/
+    [SerializeField] private double qZ;
 
     // Acceleration values
-/*    [SerializeField] private double accelerationX;
+    [SerializeField] private double accelerationX;
     [SerializeField] private double accelerationY;
-    [SerializeField] private double accelerationZ;*/
+    [SerializeField] private double accelerationZ;
 
-/*    [SerializeField] private GameObject engagement;
-    [SerializeField] private GameObject excitement;
-    [SerializeField] private GameObject longTermExcitement;*/
-/*    [SerializeField] private GameObject stress;
-    [SerializeField] private GameObject relaxation;*/
-/*    [SerializeField] private GameObject interest;*/
- /*   [SerializeField] private GameObject focus;*/
+/*    [SerializeField] private GameObject engagement;*/
+/*    [SerializeField] private GameObject excitement;*/
+/*    [SerializeField] private GameObject longTermExcitement;*/
+/*    [SerializeField] private GameObject stress;*/
+    /*    [SerializeField] private GameObject relaxation;*/
+    [SerializeField] private GameObject interest;
+    /*    [SerializeField] private GameObject focus;*/
 
     void Update()
     {
@@ -66,8 +67,9 @@ namespace dirox.emotiv.controller
           string chanStr = ChannelStringList.ChannelToString(ele);
           // double is similar to a float
           double[] data = DataStreamManager.Instance.GetMotionData(ele);
+          Debug.Log(data.Length);
 
-/*          if (data != null && data.Length > 0)
+          if (usePhysicalDevice == true && data != null && data.Length > 0)
           {
             if (chanStr == "Q0") qW = data[0];
             if (chanStr == "Q1") qW = data[0];
@@ -77,18 +79,18 @@ namespace dirox.emotiv.controller
             if (chanStr == "ACCX") accelerationX = data[0];
             if (chanStr == "ACCY") accelerationY = data[0];
             if (chanStr == "ACCZ") accelerationZ = data[0];
-          }*/
+          }
 
-/*          // Update the rotation based on quaternion values
+          // Update the rotation based on quaternion values
           Quaternion rotation = new Quaternion((float)qX, (float)qY, (float)qZ, (float)qW);
           motionCube.transform.rotation = rotation;
 
           // Apply rotation based on acceleration values
           Vector3 acceleration = new Vector3((float)accelerationX, (float)accelerationY, (float)accelerationZ);
-          motionCube.transform.Rotate(acceleration * Time.deltaTime);*/
+          motionCube.transform.Rotate(acceleration * Time.deltaTime);
         }
       }
-
+      Debug.Log("instance" + DataStreamManager.Instance.GetNumberPMSamples());
       // update pm data
       if (DataStreamManager.Instance.GetNumberPMSamples() > 0)
       {
@@ -96,24 +98,17 @@ namespace dirox.emotiv.controller
         {
           string chanStr = ele;
           double data = DataStreamManager.Instance.GetPMData(ele);
-/*          if (data > -1)
+          Debug.Log("" + data);
+          if (usePhysicalDevice == true && data > -1 || useVirtualDevice == true && data > -1)
           {
-*//*            engagement.SetActive(true);
-            excitement.SetActive(true);*//*
-            stress.SetActive(true);
-            relaxation.SetActive(true);
-*//*            interest.SetActive(true);
-            focus.SetActive(true);*//*
+/*            stress.SetActive(false);*/
+            interest.SetActive(true);
           }
           else
           {
-*//*            engagement.SetActive(false);
-            excitement.SetActive(false);*//*
-            stress.SetActive(false);
-            relaxation.SetActive(false);
-*//*            interest.SetActive(false);
-            focus.SetActive(false);*//*
-          }*/
+/*            stress.SetActive(false);*/
+            interest.SetActive(false);
+          }
         }
       }
     }

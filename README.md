@@ -94,7 +94,7 @@ We use this configuration to work virtualized hardware from the Emotiv Launcher.
 
 This boolean will allow for the data stream but not the motion data.
 
-### 3. experimental-bci-integration
+### 3. Configuration for Physical Device
 
 We use this branch to work with physical brainware.
 

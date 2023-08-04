@@ -102,3 +102,4 @@ Same as above, but with a physical device connected via bluetooth.  This has som
 #### Dependencies:
 
 This project was initated by leveraging the [Emotiv-Unity-Plugin](https://github.com/Emotiv/unity-plugin) and is included with this project as a submodule.
+

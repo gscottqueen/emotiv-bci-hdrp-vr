@@ -80,15 +80,19 @@ There are different builds and branches that are in active development, each has
 ### 1. Open Explore
 [This build package is for demonstration of interactions without the brainware dependency.](https://drive.google.com/file/d/1Qlgar3oFswinqbXLeUL5ud7afwuF94OQ/view?usp=sharing)
 
-### 2. experimental-bci-integration-virtual
+### 2. Configuration for Virtual Devices
 
-We use this branch to work virtualized hardware from the Emotiv Launcher.
+We use this configuration to work virtualized hardware from the Emotiv Launcher.
 
 **Additional Dependencies**
 - [Emotiv Launcher](https://www.emotiv.com/emotiv-launcher/)
 - [Emotiv Developers License and Key](https://www.emotiv.com/developer/)
 
-With this branch you can establish a virtual brainware device and use it to imulate generative conection points in the interactive experiences.
+1. in the `DataSubscriber`, set `Use Virtual Device` to active
+2. in the `Scene` activate `UsePhysicalDevcice` GameObject
+3. in the `Scene` set `FreePlay` GameObject to inactive
+
+This boolean will allow for the data stream but not the motion data.
 
 ### 3. experimental-bci-integration
 
@@ -96,6 +100,10 @@ We use this branch to work with physical brainware.
 
 **Additional Dependencies**
 - [Emotiv Insight 2 (5 channel) EEG](https://www.emotiv.com/insight/)
+  
+1. in the `DataSubscriber`, set `Use Physical Device` to active
+2. in the `Scene` activate `UsePhysicalDevcice` GameObject
+3. in the `Scene` set `FreePlay` GameObject to inactive
 
 Same as above, but with a physical device connected via bluetooth.  This has some additinoal quaternion data points that are only avalible through the physical device.
 

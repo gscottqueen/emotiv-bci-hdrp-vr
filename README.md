@@ -1,4 +1,4 @@
-# Integrating Human Data into Virtual Environments
+﻿# Integrating Human Data into Virtual Environments
 
 > An experimental generative art work that integrates electroencephalography (EEG) activity with a virtual environment.
 

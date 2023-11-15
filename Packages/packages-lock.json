@@ -25,49 +25,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.collections": {
-      "version": "1.2.4",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.burst": "1.6.6",
-        "com.unity.test-framework": "1.1.31"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.demoteam.digital-human": {
-      "version": "https://github.com/Unity-Technologies/com.unity.demoteam.digital-human.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.burst": "1.2.3",
-        "com.unity.collections": "0.1.1-preview",
-        "com.unity.mathematics": "1.1.0",
-        "com.unity.render-pipelines.high-definition": "7.3.1",
-        "com.unity.timeline": "1.2.17"
-      },
-      "hash": "2b492484903a93ec1e3d0866b5d7cb73ec2aeeb7"
-    },
-    "com.unity.demoteam.hair": {
-      "version": "https://github.com/Unity-Technologies/com.unity.demoteam.hair.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.burst": "1.4.1",
-        "com.unity.collections": "0.15.0-preview.21",
-        "com.unity.mathematics": "1.2.6",
-        "com.unity.render-pipelines.core": "10.2.2",
-        "com.unity.shadergraph": "10.2.2"
-      },
-      "hash": "8ae715775d29584aab3849760bb97cbdab2e4d35"
-    },
-    "com.unity.demoteam.mesh-to-sdf": {
-      "version": "https://github.com/Unity-Technologies/com.unity.demoteam.mesh-to-sdf.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "8f69f93f605094c5ff5ddb1fb43294e8cfe40165"
-    },
     "com.unity.editorcoroutines": {
       "version": "1.0.0",
       "depth": 1,
@@ -126,6 +83,15 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.memoryprofiler": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.editorcoroutines": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.performance.profile-analyzer": {

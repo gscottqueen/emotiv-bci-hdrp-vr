@@ -61,12 +61,12 @@ public class objectScaleOnCollision : MonoBehaviour
     if (other.gameObject.CompareTag("Interactable"))
     {
       other.attachedRigidbody.isKinematic = true;
-      StartCoroutine(LerpFunction(0.6f, timeToLerp, other.gameObject));
+      StartCoroutine(LerpFunction(0.4f, timeToLerp, other.gameObject));
       other.gameObject.transform.parent = socketWrapper.transform;
+      // position
       Vector3 center = new Vector3();
       center = socket.GetComponent<Renderer>().bounds.center;
       otherObj.transform.position = Vector3.Lerp(otherObj.transform.position, center, timeToLerp);
-      /*      StartCoroutine(LerpPosition(center, timeToLerp, otherObj));*/
     }
   }
 
